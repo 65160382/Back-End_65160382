@@ -27,15 +27,15 @@ app.post('/submit', (req, res) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: '65160382@go.buu.ac.th',
-            pass: 'Nut65160382.'
+            // user: 'your-email', ใส่รหัสเมลตัวเอง
+            // pass: 'your-password' ใส่password เมลตัวเอง
         }
     });
 
     // ตั้งค่าข้อมูลอีเมล
     const mailOptions = {
-        from: '65160382@go.buu.ac.th',
-        to: '65160388@go.buu.ac.th',
+        // from: 'form-email', ใส่่เมล
+        // to: 'to-email', ใส่เมลที่จะส่ง
         subject: 'View website',
         text: `Name: ${name}\nEmail: ${email}\nComment: ${comment}`
     };
