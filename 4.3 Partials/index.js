@@ -34,7 +34,7 @@ app.post('/submit', (req, res) => {
 
     // ตั้งค่าข้อมูลอีเมล
     const mailOptions = {
-        // from: 'form-email', ใส่่เมล
+        // from: 'form-email', ใส่เมล
         // to: 'to-email', ใส่เมลที่จะส่ง
         subject: 'View website',
         text: `Name: ${name}\nEmail: ${email}\nComment: ${comment}`
